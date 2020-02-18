@@ -1,0 +1,125 @@
+<ion-header [translucent]="true" mode="ios" class="ion-no-border class-order-0" id="idHeader">
+  <ion-toolbar>
+    <ion-buttons slot="end">
+      <ion-button>
+        Edit
+      </ion-button>
+    </ion-buttons>
+    <ion-title>
+      John Smith
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+<!-- [scrollEvents]="true"
+(ionScrollStart)="logScrollStart()"
+(ionScrollEnd)="logScrollEnd()" -->
+<ion-content [fullscreen]="true" mode="ios" forceOverscroll="true" [scrollEvents]="true"
+  (ionScroll)="logScrolling($event)">
+  <ion-header collapse="condense" class="ion-no-border">
+    <ion-fab vertical="top" horizontal="end" slot="fixed" mode="ios">
+      <ion-fab-button color="transparent">
+        Edit
+      </ion-fab-button>
+    </ion-fab>
+    <ion-toolbar>
+      <ion-title size="large"> John Smith
+        <span class="wallet">
+          <ion-icon name="wallet-outline"></ion-icon> AED <span class="balance">20.00</span>
+        </span>
+      </ion-title>
+      <img src="assets/user-1.png" alt="" width="100%">
+    </ion-toolbar>
+  </ion-header>
+  <!--  -->
+  <ion-list>
+    <ion-list-header>
+      Personal Information
+    </ion-list-header>
+
+    <ion-item>
+      <ion-label>
+        <h3>Email</h3>
+      </ion-label>
+      <ion-label slot="end" class="ion-text-end">
+        <h3>mail@domain.com</h3>
+      </ion-label>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>
+        <h3>Mobile</h3>
+      </ion-label>
+      <ion-label slot="end" class="ion-text-end">
+        <h3>+971 0567 89 1011</h3>
+      </ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>
+        <h3>Country</h3>
+      </ion-label>
+      <ion-label slot="end" class="ion-text-end">
+        <h3>United Arab Emirates</h3>
+      </ion-label>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>
+        <h3>Location</h3>
+      </ion-label>
+      <ion-label slot="end" class="ion-text-end">
+        <h3>United Arab Emirates</h3>
+      </ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>
+        <h3>Password</h3>
+      </ion-label>
+      <ion-label slot="end" class="ion-text-end ion-no-margin">
+        <ion-button fill="clear"> Change </ion-button>
+      </ion-label>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>
+        <h3>Promo Influencer Code</h3>
+      </ion-label>
+      <ion-label slot="end" class="ion-text-end ion-no-margin">
+        <ion-button fill="clear"> Change </ion-button>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+  <ion-list class="ion-padding-top">
+    <ion-list-header >
+      Receiving Options
+    </ion-list-header>
+
+    <ion-item>
+      <ion-label>
+        <h3>Bank account</h3>
+      </ion-label>
+      <ion-label slot="end" class="ion-text-end">
+        <h3>342-345-021</h3>
+      </ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>
+        <h3>PayPal</h3>
+      </ion-label>
+      <ion-label slot="end" class="ion-text-end ion-no-margin">
+        <ion-button fill="clear"> Setup </ion-button>
+      </ion-label>
+    </ion-item>
+
+    <ion-item>
+      <ion-label color="danger">
+        <h3>Logout</h3>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+
+
+
+
+
+
+</ion-content>

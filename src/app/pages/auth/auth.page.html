@@ -1,0 +1,140 @@
+<ion-header  [translucent]="true">
+  <ion-toolbar>
+    <ion-title class="ion-text-center">Welcome To Azeez</ion-title>
+  </ion-toolbar>
+  <ion-segment [(ngModel)]="content">
+    <ion-segment-button value="login">
+      <ion-label>Login</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="signup">
+      <ion-label>SignUp</ion-label>
+    </ion-segment-button>
+  </ion-segment>
+</ion-header>
+
+<ion-content *ngIf="content=='login'" [fullscreen]="true">
+  <form class="ion-padding ion-text-center">
+    <ion-item class="ion-margin-top">
+      <ion-label position="floating">Email</ion-label>
+      <ion-input></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Password</ion-label>
+      <ion-input></ion-input>
+      <ion-button slot="end" fill="clear" class="ion-no-padding ion-margin-vertical">Forget?</ion-button>
+    </ion-item>
+    <ion-button class="ion-margin-top login-btn" shape="round" mode="md">Login</ion-button>
+  </form>
+  <ion-item lines="none">
+    <ion-label class="ion-text-center">OR<br><br> Login with soical media accounts</ion-label>
+  </ion-item>
+  <ion-grid class="ion-text-center ion-padding">
+    <ion-row>
+      <ion-col>
+        <ion-fab-button class="soical-btn">
+          <ion-icon name="logo-facebook"></ion-icon>
+        </ion-fab-button>
+        <p class="ion-no-margin">Facebook</p>
+      </ion-col>
+      <ion-col>
+        <ion-fab-button class="soical-btn">
+          <ion-icon name="logo-twitter"></ion-icon>
+        </ion-fab-button>
+        <p class="ion-no-margin">Twitter</p>
+      </ion-col>
+      <ion-col>
+        <ion-fab-button class="soical-btn">
+          <ion-icon name="logo-google"></ion-icon>
+        </ion-fab-button>
+        <p class="ion-no-margin">Google</p>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
+<ion-content *ngIf="content=='signup'" [fullscreen]="true">
+  <ion-item lines="none " class="ion-padding-top">
+    <ion-label class="ion-text-center">Signup with social media accounts</ion-label>
+  </ion-item>
+  <ion-grid class="ion-text-center ion-padding">
+    <ion-row>
+      <ion-col>
+        <ion-fab-button class="soical-btn">
+          <ion-icon name="logo-facebook"></ion-icon>
+        </ion-fab-button>
+        <p class="ion-no-margin">Facebook</p>
+      </ion-col>
+      <ion-col>
+        <ion-fab-button class="soical-btn">
+          <ion-icon name="logo-twitter"></ion-icon>
+        </ion-fab-button>
+        <p class="ion-no-margin">Twitter</p>
+      </ion-col>
+      <ion-col>
+        <ion-fab-button class="soical-btn">
+          <ion-icon name="logo-google"></ion-icon>
+        </ion-fab-button>
+        <p class="ion-no-margin">Google</p>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <ion-item lines="none ">
+    <ion-label class="ion-text-center">OR</ion-label>
+  </ion-item>
+  <form class="ion-padding-horizontal ion-text-center">
+    <ion-item>
+      <ion-label position="floating">Username</ion-label>
+      <ion-input></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Email</ion-label>
+      <ion-input></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Password</ion-label>
+      <ion-input></ion-input>
+      <ion-button slot="end" fill="clear" class="ion-no-padding ion-margin-vertical">Forget?</ion-button>
+    </ion-item>
+    <ion-item lines="full">
+      <ion-label>Gender</ion-label>
+      <ion-segment slot="end" mode="ios">
+        <ion-segment-button value="male">
+          <ion-label>Male</ion-label>
+        </ion-segment-button>
+        <ion-segment-button value="female">
+          <ion-label>Female</ion-label>
+        </ion-segment-button>
+      </ion-segment>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Country</ion-label>
+      <ion-select placeholder="Select Country">
+        <ion-select-option value="UAE">UAE</ion-select-option>
+        <ion-select-option value="KSA">KSA</ion-select-option>
+      </ion-select>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Location</ion-label>
+      <ion-input></ion-input>
+    </ion-item>
+    <ion-grid class="ion-no-padding ion-no-margin">
+      <ion-row>
+        <ion-col size="3" class="padding-top-7">
+          <ion-item>
+            <ion-input value="+975" disabled></ion-input>
+          </ion-item>
+        </ion-col>
+        <ion-col size="9">
+          <ion-item>
+            <ion-label position="floating">Phone Number</ion-label>
+            <ion-input></ion-input>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    <ion-item>
+      <ion-label position="floating">Promo Influencer Code</ion-label>
+      <ion-input></ion-input>
+    </ion-item>
+    <ion-button class="ion-margin-top login-btn" shape="round" mode="md">SignUp</ion-button>
+  </form>
+</ion-content>

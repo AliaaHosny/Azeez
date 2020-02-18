@@ -1,0 +1,48 @@
+<ion-header [translucent]="true" class="ion-no-border">
+  <ion-toolbar> </ion-toolbar>
+  <ion-fab vertical="top" horizontal="end" slot="fixed">
+    <ion-fab-button>
+      <ion-badge>22</ion-badge>
+      <ion-icon name="notifications"></ion-icon>
+      <!-- <span>12312</span> -->
+    </ion-fab-button>
+  </ion-fab>
+</ion-header>
+
+
+<ion-content [fullscreen]="true">
+  <ion-list mode="ios">
+    <ion-list-header>
+      Notifications Settings
+    </ion-list-header>
+    <ion-item>
+      <ion-label>
+        <h3>Notify Me On New Ads</h3>
+      </ion-label>
+      <ion-toggle slot="end" checked></ion-toggle>
+    </ion-item>
+    <ion-item>
+      <ion-label>
+        <h3>Notify Me On Expiry Dates</h3>
+      </ion-label>
+      <ion-toggle slot="end"></ion-toggle>
+    </ion-item>
+    <ion-item lines="none">
+      <ion-label>
+        <h3>Notify Me On Earning Points</h3>
+      </ion-label>
+      <ion-toggle slot="end" checked></ion-toggle>
+    </ion-item>
+  </ion-list>
+
+  <ion-list mode="ios" class="ion-padding-top"  lines="none">
+    <ion-list-header>
+      Help And Support
+    </ion-list-header>
+    <ion-item detail  >
+      <ion-label>
+        <h3>Open Help Center</h3>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>

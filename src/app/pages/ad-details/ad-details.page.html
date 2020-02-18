@@ -1,0 +1,100 @@
+<ion-header [translucent]="true" mode="ios" class="ion-no-border class-order-0" id="idHeader">
+  <ion-toolbar>
+    <ion-buttons slot="end">
+      <ion-button>
+        <ion-icon slot="icon-only" name="close" class="text-color-white"></ion-icon>
+
+      </ion-button>
+    </ion-buttons>
+    <ion-title>
+      Harry up! Buy two Get One Free
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+<!-- [scrollEvents]="true"
+(ionScrollStart)="logScrollStart()"
+(ionScrollEnd)="logScrollEnd()" -->
+<ion-content [fullscreen]="true" mode="ios" forceOverscroll="true" [scrollEvents]="true"
+  (ionScroll)="logScrolling($event)">
+  <ion-header collapse="condense" class="ion-no-border">
+    <ion-fab vertical="top" horizontal="end" slot="fixed" mode="ios">
+      <ion-fab-button color="transparent">
+        <ion-icon name="close" class="text-color-white"></ion-icon>
+
+      </ion-fab-button>
+    </ion-fab>
+    <ion-toolbar class="text-medium ">
+      <ion-title size="large" class="font-size-20"> Harry up! Buy two Get One Free
+        <span class="expires">
+          Expires in Aug 23, 2017
+        </span>
+        <hr class="ion-no-margin">
+        <ion-grid class="ion-text-center">
+          <ion-row>
+            <ion-col>
+              <ion-button fill="clear" class="text-color-white">
+                <ion-icon slot="icon-only" name="heart-outline"></ion-icon>
+              </ion-button>
+            </ion-col>
+            <ion-col>
+
+              <ion-button fill="clear" class="text-color-white">
+                <ion-icon slot="icon-only" name="share-social"></ion-icon>
+              </ion-button>
+            </ion-col>
+            <ion-col>
+              <p class="font-size ion-no-margin">
+                <ion-icon name="location-outline"></ion-icon>
+                <br>
+                <span>500m</span>
+              </p>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-title>
+      <img src="assets/a-details.png" alt="" width="100%">
+    </ion-toolbar>
+
+  </ion-header>
+  <!--  -->
+  <ion-list lines="none">
+    <ion-list-header>
+      Description
+    </ion-list-header>
+
+    <ion-item>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias excepturi officia at ad minus quae unde enim
+        eveniet odit, nisi doloribus ducimus? Harum tenetur quia sed expedita sit, nostrum nemo.
+        <br>
+        <br>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias excepturi officia at ad minus quae unde enim
+        eveniet odit, nisi doloribus ducimus? Harum tenetur quia sed expedita sit, nostrum nemo.
+      </p>
+    </ion-item>
+  </ion-list>
+  <ion-list class="ion-padding-vertical" lines="none">
+    <ion-list-header>
+      Offer
+    </ion-list-header>
+
+    <ion-item>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias excepturi officia at ad minus quae unde enim
+        eveniet odit, nisi doloribus ducimus? Harum tenetur quia sed expedita sit, nostrum nemo.
+      </p>
+    </ion-item>
+    <ion-item>
+      <ion-text color="primary">
+        AzeezLEGO2017
+      </ion-text>
+    </ion-item>
+    <ion-item>
+      <img src="assets/lego-logo.png" height="40px" >
+    </ion-item>
+  </ion-list>
+
+
+
+
+
+
+</ion-content>

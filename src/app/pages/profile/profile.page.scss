@@ -1,0 +1,38 @@
+ion-content ion-toolbar {
+    --background: translucent;
+    padding: 0;
+    margin: 0;
+    display: block;
+  }
+  ion-button {
+    margin: 0;
+  }
+  .class-order-0 {
+    order: 1;
+    display: none;
+  }
+  
+  .wallet {
+    font-size: large;
+    font-weight: normal;
+    display: block;
+    padding-bottom: 10px;
+  }
+  ion-list-header {
+    font-size: large;
+  }
+  ion-fab-button {
+    --box-shadow: 0;
+  }
+  .header-collapse-condense {
+    display: block !important;
+  }
+  ion-list {
+    --background: transparent;
+    background: transparent;
+    ion-item{
+      --background: transparent;
+  
+    }
+  }
+  
