@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ReceivingOptionsPage implements OnInit {
 
+  content = "bank";
+
   constructor() { }
 
   ngOnInit() {

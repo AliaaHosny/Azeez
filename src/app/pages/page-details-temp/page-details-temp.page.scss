@@ -1,0 +1,27 @@
+ion-header {
+    ion-toolbar {
+      --ion-background-color: transparent;
+    }
+    ion-fab {
+      ion-fab-button {
+        ion-badge {
+          position: absolute;
+          bottom: 4px;
+        }
+        ion-icon {
+          top: 8px;
+          position: absolute;
+        }
+      }
+    }
+  }
+  ion-item {
+    --background: transparent;
+  }
+  ion-list {
+    --background: transparent;
+    background: transparent;
+    padding-top: 40px;
+  }
+
+  

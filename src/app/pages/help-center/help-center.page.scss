@@ -1,0 +1,34 @@
+ion-header {
+  ion-toolbar {
+    --ion-background-color: transparent;
+  }
+  ion-fab {
+    ion-fab-button {
+      ion-badge {
+        position: absolute;
+        bottom: 4px;
+      }
+      ion-icon {
+        top: 8px;
+        position: absolute;
+      }
+    }
+  }
+}
+ion-item {
+  --background: transparent;
+}
+ion-list {
+  --background: transparent;
+  background: transparent;
+  padding-top: 40px;
+}
+.contact {
+    // padding-inline-start: 80px;
+    padding-inline-start: 20%;
+    font-size: 28px;
+    padding-inline-end: 12px;
+  }
+  .color-primary{
+    color : var(--ion-color-primary);
+}

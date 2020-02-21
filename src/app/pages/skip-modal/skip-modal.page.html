@@ -1,9 +1,32 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>SkipModal</ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-card class="ion-no-margin ion-no-padding inner-content">
+  <ion-card-header class="ion-text-center">
+    <ion-card-title>Please tell us why did you<br> skip this ad</ion-card-title>
+  </ion-card-header>
+  <ion-card-content class="ion-text-center">
+    The data collected from here will allow more customization in which future offers/ads to show to you.
+  </ion-card-content>
+  <ion-list lines="none" class="ion-padding">
+    <ion-radio-group value="1">
 
-<ion-content>
+      <ion-item>
+        <ion-label>I’m not interested in this ad</ion-label>
+        <ion-radio slot="start" value="1"></ion-radio>
+      </ion-item>
 
-</ion-content>
+      <ion-item>
+        <ion-label>I’ve watched this ad before</ion-label>
+        <ion-radio slot="start" value="2"></ion-radio>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Busy now</ion-label>
+        <ion-radio slot="start" value="3"></ion-radio>
+      </ion-item>
+      <ion-item>
+        <ion-label>Other</ion-label>
+        <ion-radio slot="start" value="4"></ion-radio>
+      </ion-item>
+    </ion-radio-group>
+    <ion-button class="ion-margin-top" shape="round" mode="ios" expand="full">Submit</ion-button>
+  </ion-list>
+</ion-card>

@@ -1,9 +1,68 @@
-<ion-header>
+<ion-header mode="ios" [translucent]="false">
   <ion-toolbar>
-    <ion-title>HelpCenter</ion-title>
+    <ion-title>Help Center</ion-title>
   </ion-toolbar>
+  <ion-fab vertical="top" horizontal="end" slot="fixed">
+    <ion-fab-button>
+      <ion-badge>22</ion-badge>
+      <ion-icon name="notifications"></ion-icon>
+      <!-- <span>12312</span> -->
+    </ion-fab-button>
+  </ion-fab>
 </ion-header>
 
-<ion-content>
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense" mode="ios">
+    <ion-toolbar>
+      <ion-title size="large">Help Center</ion-title>
+    </ion-toolbar>
+    <!-- comment this for getting old desgin -->
+    <ion-toolbar>
+      <ion-searchbar></ion-searchbar>
+    </ion-toolbar>
+  </ion-header>
+  <!-- uncomment this for getting old desgin -->
+  <!-- <form class="ion-padding">
+    <ion-item class="ion-margin-top">
+      <ion-label position="floating">Search</ion-label>
+      <ion-input></ion-input>
+    </ion-item>
+  </form> -->
+  <ion-list class="ion-padding-top ion-transparent" mode="ios">
+    <ion-list-header>
+      Browse Helps
+    </ion-list-header>
 
+    <ion-grid class="ion-padding ion-transparent ion-text-center">
+      <ion-row>
+        <ion-col size="6">
+          <ion-button class="verify-btn" shape="round" mode="ios" expand="full">Using Azeez</ion-button>
+
+        </ion-col>
+        <ion-col size="6">
+          <ion-button class="verify-btn" shape="round" mode="ios" expand="full">Privacy</ion-button>
+
+        </ion-col>
+        <ion-col size="6">
+          <ion-button class="verify-btn" shape="round" mode="ios" expand="full">Receiving Money</ion-button>
+
+        </ion-col>
+        <ion-col size="6">
+          <ion-button class="verify-btn" shape="round" mode="ios" expand="full">Policy</ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-list>
+  <ion-card class="ion-activatable">
+    <ion-item>
+
+      <ion-icon class="contact" name="mail-outline" color="primary"></ion-icon>
+      <ion-label>
+        <h2 class="color-primary">Contact Us</h2>
+        <p>If you still need help</p>
+
+      </ion-label>
+    </ion-item>
+    <ion-ripple-effect></ion-ripple-effect>
+  </ion-card>
 </ion-content>

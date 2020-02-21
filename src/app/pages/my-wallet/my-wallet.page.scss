@@ -1,0 +1,23 @@
+ion-list {
+  --background: transparent;
+  background: transparent;
+  ion-item {
+    --background: transparent;
+    background: transparent;
+  }
+}
+
+ion-item ion-segment {
+  width: 50%;
+}
+
+ion-header {
+  background: var(--ion-color-primary) url(../../../assets/bg-.png);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: 100vh;
+  background-blend-mode: screen;
+}
+.transfer-btn{
+    width: 64%;
+}

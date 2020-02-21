@@ -11,10 +11,14 @@
 }
 ion-content {
     --padding-top: 24px;
-    --background: url(../../../assets/bg.png) no-repeat center center / cover;
+    --background:  url(../../../assets/bg.png) no-repeat center center / cover;
 }
+ion-content.dark {
+    --padding-top: 24px;
+    --background: var(--ion-color-primary) url(../../../assets/bg.png) no-repeat center center / cover;
+}
+
 ion-slides {
     margin-top: 24px;
     padding-bottom: 24px;
 }
-

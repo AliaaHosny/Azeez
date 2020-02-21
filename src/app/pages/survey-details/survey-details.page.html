@@ -1,9 +1,130 @@
-<ion-header>
+<ion-header [translucent]="true" mode="ios" class="ion-no-border class-order-0" id="idHeader">
   <ion-toolbar>
-    <ion-title>SurveyDetails</ion-title>
+    <ion-buttons slot="end">
+      <ion-button>
+        <ion-icon slot="icon-only" name="close" class="text-color-white"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>
+      Harry up! Buy two Get One Free
+    </ion-title>
   </ion-toolbar>
 </ion-header>
+<!-- [scrollEvents]="true"
+(ionScrollStart)="logScrollStart()"
+(ionScrollEnd)="logScrollEnd()" -->
+<ion-content [fullscreen]="true" mode="ios" forceOverscroll="true" [scrollEvents]="true">
+  <ion-header collapse="condense" class="ion-no-border">
+    <ion-fab vertical="top" horizontal="end" slot="fixed" mode="ios">
+      <ion-fab-button color="transparent">
+        <ion-icon name="close" class="text-color-white"></ion-icon>
 
-<ion-content>
+      </ion-fab-button>
+    </ion-fab>
+    <ion-toolbar class="text-medium ">
+      <ion-title size="large" class="font-size-20"> Harry up! Buy two Get One Free
+        <span class="expires">
+          Expires in Aug 23, 2017
+        </span>
+        <hr class="ion-no-margin">
+        <ion-grid class="ion-text-center">
+          <ion-row>
+            <ion-col>
+              <ion-button fill="clear" class="text-color-white">
+                <ion-icon slot="icon-only" name="heart-outline"></ion-icon>
+              </ion-button>
+            </ion-col>
+            <ion-col>
+
+              <ion-button fill="clear" class="text-color-white">
+                <ion-icon slot="icon-only" name="share-social"></ion-icon>
+              </ion-button>
+            </ion-col>
+            <ion-col>
+              <p class="font-size ion-no-margin">
+                <ion-icon name="location-outline"></ion-icon>
+                <br>
+                <span>500m</span>
+              </p>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-title>
+      <img src="assets/a-survey.png" alt="" width="100%">
+    </ion-toolbar>
+
+  </ion-header>
+  <!--  --> 
+  <ion-list lines="none">
+    <ion-radio-group value="1">
+      <ion-list-header>
+        <ion-label>Have you shopped from us before?</ion-label>
+      </ion-list-header>
+
+      <ion-item mode="md">
+        <ion-label>Yes</ion-label>
+        <ion-radio slot="start" value="1"></ion-radio>
+      </ion-item>
+
+      <ion-item mode="md">
+        <ion-label>No</ion-label>
+        <ion-radio slot="start" value="2"></ion-radio>
+      </ion-item>
+    </ion-radio-group>
+  </ion-list>
+  <ion-list lines="none" class="ion-text-center">
+    <ion-radio-group value="1" class="">
+      <ion-list-header class="ion-text-start">
+        <ion-label>What made you to shop from us?</ion-label>
+      </ion-list-header>
+
+      <ion-item mode="md">
+        <ion-label>The quality</ion-label>
+        <ion-radio slot="start" value="1"></ion-radio>
+      </ion-item>
+
+      <ion-item mode="md">
+        <ion-label>Fast delivery service</ion-label>
+        <ion-radio slot="start" value="2"></ion-radio>
+      </ion-item>
+      <ion-item mode="md">
+        <ion-label>Pay on delivery option</ion-label>
+        <ion-radio slot="start" value="3"></ion-radio>
+      </ion-item>
+      <ion-item mode="md" >
+        <ion-label>All of the above</ion-label>
+        <ion-radio slot="start" value="4"></ion-radio>
+      </ion-item>
+    </ion-radio-group>
+    <div class="ion-margin-top">
+      <ion-button class="ion-margin ion-padding-horizontal submit-btn" shape="round" mode="ios" (click)="presentAlert()" >Submit</ion-button>
+    </div>
+
+  </ion-list>
+
+  <ion-list class="ion-padding-vertical" lines="none">
+    <ion-list-header>
+      Offer
+    </ion-list-header>
+
+    <ion-item>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias excepturi officia at ad minus quae unde enim
+        eveniet odit, nisi doloribus ducimus? Harum tenetur quia sed expedita sit, nostrum nemo.
+      </p>
+    </ion-item>
+    <ion-item>
+      <ion-text color="primary">
+        AzeezLEGO2017
+      </ion-text>
+    </ion-item>
+    <ion-item>
+      <img src="assets/lego-logo.png" height="40px">
+    </ion-item>
+  </ion-list>
+
+
+
+
+
 
 </ion-content>

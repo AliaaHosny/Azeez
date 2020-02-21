@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AuthPage implements OnInit {
 
-  content = "signup";
+  content = "login";
 
   constructor() { }
 

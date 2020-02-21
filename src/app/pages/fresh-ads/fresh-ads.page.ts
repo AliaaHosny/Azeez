@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { AlertController, ModalController } from '@ionic/angular';
+import { SkipModalPage } from '../skip-modal/skip-modal.page';
 
 @Component({
   selector: 'app-fresh-ads',
@@ -7,10 +9,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FreshAdsPage implements OnInit {
 
-  constructor() { }
+  constructor(public modalController: ModalController) {}
 
   ngOnInit() {
   }
+
   slideOpts = {
     slidesPerView: 1.09,
     coverflowEffect: {
@@ -99,5 +102,14 @@ export class FreshAdsPage implements OnInit {
       }
     }
   }
+  async presentModal() {
+    const modal = await this.modalController.create({
+      component: SkipModalPage,
+      cssClass: 'auto-height'
+
+    });
+    return await modal.present();
+  }
+
 
 }
