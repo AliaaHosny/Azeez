@@ -33,7 +33,7 @@ ion-header {
 }
 
 ion-content {
-  --background: url(assets/bg-.png) no-repeat center center / cover;
+  --background:  var(--ion-background-color) url(assets/bg-.png) no-repeat center center / cover;
 
   ion-toolbar {
     --background: translucent;
@@ -68,4 +68,38 @@ ion-modal.auto-height {
       padding: 10px;
     }
   }
+}
+
+// light theme
+body:not(.dark) {
+  //intro page
+  app-intro {
+    ion-button {
+      --ion-color-contrast: var(--ion-color-primary);
+    }
+    ion-content {
+      --padding-top: 24px;
+      --background: var(--ion-color-primary) url(assets/bg.png) no-repeat center center / cover;
+    }
+  }
+
+  //auth & my-wallet & receiving-options pages
+  app-auth,
+  app-my-wallet,
+  app-receiving-options {
+    ion-segment-button {
+      color: var(--ion-color-white-shade);
+    }
+  }
+
+  //profile page
+  app-profile {
+    ion-title {
+      color: var(--ion-color-white);
+    }
+    ion-fab {
+      color: var(--ion-color-white);
+    }
+  }
+
 }

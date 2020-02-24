@@ -1,6 +1,9 @@
 <ion-header>
   <ion-toolbar color="transparent" mode="md">
-    <ion-buttons slot="end">
+    <ion-buttons slot="start">
+      <ion-back-button color="white"></ion-back-button>
+    </ion-buttons>
+    <ion-buttons slot="end" routerLink="/tabs">
       <ion-button color="white">
         Skip
       </ion-button>
@@ -13,6 +16,9 @@
     </ion-segment-button>
     <ion-segment-button value="paypal">
       <ion-label>Paypal</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="stc">
+      <ion-label>STC Pay</ion-label>
     </ion-segment-button>
   </ion-segment>
   <!-- <div>xxx</div> -->
@@ -34,7 +40,7 @@
       <ion-label position="floating">UAE Account Holder Name</ion-label>
       <ion-input></ion-input>
     </ion-item>
-    <ion-button class="verify-btn" shape="round" mode="ios">Add Bank Account</ion-button>
+    <ion-button class="verify-btn" shape="round" mode="ios" routerLink="/tabs">Add Bank Account</ion-button>
   </form>
   <!-- <ion-grid class="ion-no-margin ion-no-padding">
     <ion-row>
@@ -64,7 +70,37 @@
       <ion-label position="floating">PayPal Account Email</ion-label>
       <ion-input></ion-input>
     </ion-item>
-    <ion-button class="verify-btn" shape="round" mode="ios">Add PayPal Account</ion-button>
+    <ion-button class="verify-btn" shape="round" mode="ios" routerLink="/tabs">Add PayPal Account</ion-button>
+  </form>
+  <!-- <ion-grid class="ion-no-margin ion-no-padding">
+    <ion-row>
+      <ion-col size="2.5" offset="1.5">
+        <ion-icon name="bulb-outline"></ion-icon>
+      </ion-col>
+      <ion-col size="8">
+        By skipping you can still earn on your  Azeez wallet until you connect your bank/PayPal accounts and be able to transfer the balance
+      </ion-col>
+    </ion-row>
+  </ion-grid> -->
+  <ion-item lines="none">
+    <ion-icon name="bulb-outline" slot="start" class="ion-text-end ion-no-margin ion-padding-bottom padding-end-8" color="primary"></ion-icon>
+    <ion-note class="ion-text-start ion-text-wrap">
+      By skipping you can still earn on your Azeez wallet until you connect your Bank/PayPal accounts and be able to transfer the balance.</ion-note>
+  </ion-item>
+</ion-content>
+<ion-content *ngIf="content=='stc'" [fullscreen]="true" class="ion-padding ion-text-center">
+  <div class="center ion-text-center">
+    <img  src="assets/stcpay.png" alt="" class=" ion-margin-top">
+  </div>
+  <ion-item lines="none ">
+    <ion-label class="ion-text-center ion-text-wrap">Receive On STC pay</ion-label>
+  </ion-item>
+  <form class="ion-padding ion-text-center">
+    <ion-item>
+      <ion-label position="floating">STC Number</ion-label>
+      <ion-input></ion-input>
+    </ion-item>
+    <ion-button class="verify-btn" shape="round" mode="ios" routerLink="/tabs">Add STC Pay</ion-button>
   </form>
   <!-- <ion-grid class="ion-no-margin ion-no-padding">
     <ion-row>

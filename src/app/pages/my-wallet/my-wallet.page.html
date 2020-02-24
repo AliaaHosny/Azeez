@@ -1,5 +1,8 @@
 <ion-header>
   <ion-toolbar color="transparent">
+    <ion-buttons slot="start">
+      <ion-back-button color="white"></ion-back-button>
+    </ion-buttons>
     <ion-title mode="ios" class="ion-text-center" color="white">My Wallet</ion-title>
   </ion-toolbar>
   <ion-segment [(ngModel)]="content" color="white">
@@ -306,6 +309,7 @@
       <p>AED 2.00</p>
     </ion-label>
   </ion-item>
-  <ion-button class="ion-margin-bottom transfer-btn" shape="round" mode="ios" (click)="presentModal()">Transfer</ion-button>
+  <ion-button class="ion-margin-bottom transfer-btn" shape="round" mode="ios" (click)="presentModal()">Transfer
+  </ion-button>
 
 </ion-content>

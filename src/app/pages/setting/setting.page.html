@@ -11,6 +11,8 @@
 
 
 <ion-content [fullscreen]="true">
+
+
   <ion-list mode="ios">
     <ion-list-header>
       Notifications Settings
@@ -35,11 +37,24 @@
     </ion-item>
   </ion-list>
 
-  <ion-list mode="ios" class="ion-padding-top"  lines="none">
+  <ion-list mode="ios">
+    <ion-list-header>
+      Theme Settings
+    </ion-list-header>
+    <ion-item lines="none">
+      <ion-label>
+        <h3>Dark Theme Toggle</h3>
+      </ion-label>
+
+      <ion-toggle slot="end" ></ion-toggle>
+    </ion-item>
+  </ion-list>
+
+  <ion-list mode="ios" class="ion-padding-top" lines="none">
     <ion-list-header>
       Help And Support
     </ion-list-header>
-    <ion-item detail  >
+    <ion-item detail  routerLink="/help-center">
       <ion-label>
         <h3>Open Help Center</h3>
       </ion-label>

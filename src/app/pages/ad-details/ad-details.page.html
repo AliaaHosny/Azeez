@@ -1,9 +1,8 @@
 <ion-header [translucent]="true" mode="ios" class="ion-no-border class-order-0" id="idHeader">
   <ion-toolbar>
     <ion-buttons slot="end">
-      <ion-button>
+      <ion-button routerLink="/..">
         <ion-icon slot="icon-only" name="close" class="text-color-white"></ion-icon>
-
       </ion-button>
     </ion-buttons>
     <ion-title>
@@ -18,7 +17,7 @@
   (ionScroll)="logScrolling($event)">
   <ion-header collapse="condense" class="ion-no-border">
     <ion-fab vertical="top" horizontal="end" slot="fixed" mode="ios">
-      <ion-fab-button color="transparent">
+      <ion-fab-button color="transparent" routerLink="/..">
         <ion-icon name="close" class="text-color-white"></ion-icon>
       </ion-fab-button>
     </ion-fab>

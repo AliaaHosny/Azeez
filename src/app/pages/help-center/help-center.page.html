@@ -1,19 +1,23 @@
-<ion-header mode="ios" [translucent]="false">
+<ion-header mode="md" [translucent]="true" class="ion-no-border">
   <ion-toolbar>
-    <ion-title>Help Center</ion-title>
+    <ion-buttons slot="start" mode="md">
+      <ion-back-button color="dark"></ion-back-button>
+    </ion-buttons>
   </ion-toolbar>
   <ion-fab vertical="top" horizontal="end" slot="fixed">
     <ion-fab-button>
       <ion-badge>22</ion-badge>
       <ion-icon name="notifications"></ion-icon>
-      <!-- <span>12312</span> -->
     </ion-fab-button>
   </ion-fab>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense" mode="ios">
+<ion-content [fullscreen]="true" mode="ios">
+  <ion-header collapse="" mode="ios">
     <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-back-button color="dark"></ion-back-button>
+      </ion-buttons>
       <ion-title size="large">Help Center</ion-title>
     </ion-toolbar>
     <!-- comment this for getting old desgin -->
@@ -36,19 +40,19 @@
     <ion-grid class="ion-padding ion-transparent ion-text-center">
       <ion-row>
         <ion-col size="6">
-          <ion-button class="verify-btn" shape="round" mode="ios" expand="full">Using Azeez</ion-button>
+          <ion-button class="verify-btn" shape="round" mode="ios" expand="full" routerLink="/page-details-temp">Using Azeez</ion-button>
 
         </ion-col>
         <ion-col size="6">
-          <ion-button class="verify-btn" shape="round" mode="ios" expand="full">Privacy</ion-button>
+          <ion-button class="verify-btn" shape="round" mode="ios" expand="full" routerLink="/page-details-temp">Privacy</ion-button>
 
         </ion-col>
         <ion-col size="6">
-          <ion-button class="verify-btn" shape="round" mode="ios" expand="full">Receiving Money</ion-button>
+          <ion-button class="verify-btn" shape="round" mode="ios" expand="full" routerLink="/page-details-temp">Receiving Money</ion-button>
 
         </ion-col>
         <ion-col size="6">
-          <ion-button class="verify-btn" shape="round" mode="ios" expand="full">Policy</ion-button>
+          <ion-button class="verify-btn" shape="round" mode="ios" expand="full" routerLink="/page-details-temp">Policy</ion-button>
         </ion-col>
       </ion-row>
     </ion-grid>

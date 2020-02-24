@@ -1,7 +1,10 @@
 <ion-header>
-  <ion-toolbar color="transparent" >
-    <ion-title  color="white" mode="ios">1/2 SMS Verification</ion-title>
-   </ion-toolbar>
+  <ion-toolbar color="transparent">
+    <ion-buttons slot="start">
+      <ion-back-button color="white"></ion-back-button>
+    </ion-buttons>
+    <ion-title color="white" mode="ios">1/2 SMS Verification</ion-title>
+  </ion-toolbar>
 </ion-header>
 
 <ion-content class="ion-padding ion-text-center" [fullscreen]="true">
@@ -9,16 +12,17 @@
     <img height="160" src="assets/sms.png" alt="">
   </div>
   <ion-item lines="none " class="ion-padding-top">
-    <ion-label class="ion-text-center ion-text-wrap">Please Enter the verification code that we’ve sent to your phone</ion-label>
+    <ion-label class="ion-text-center ion-text-wrap">Please Enter the verification code that we’ve sent to your phone
+    </ion-label>
   </ion-item>
   <!-- <div id="divOuter">
     <div id="divInner">
       <ion-input id="partitioned" type="text" maxlength="4" onKeyPress="if(this.value.length==4) return false;"></ion-input>  
     </div>
   </div> -->
-  <ng-otp-input  [config]="config"></ng-otp-input>
+  <ng-otp-input [config]="config"></ng-otp-input>
 
-  <ion-button class="verify-btn" shape="round" mode="ios">Verify</ion-button>
+  <ion-button class="verify-btn" shape="round" mode="ios" routerLink="/receiving-options">Verify</ion-button>
   <ion-button class="ion-margin-top " fill="clear" mode="ios">Resend Verification Code</ion-button>
 
 </ion-content>

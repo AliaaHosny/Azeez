@@ -22,6 +22,16 @@ export class AppComponent {
     this.platform.ready().then(() => {
       this.statusBar.styleDefault();
       this.splashScreen.hide();
+      this.toggleDarkTheme();
     });
   }
+
+  toggleDarkTheme() {
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)');
+    prefersDark.addListener((mediaQuery) => {
+      document.body.classList.toggle('dark', mediaQuery.matches);
+    });
+    document.body.classList.toggle('dark', prefersDark.matches);
+  }
+
 }
