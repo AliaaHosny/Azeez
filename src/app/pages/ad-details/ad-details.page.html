@@ -1,26 +1,13 @@
-<ion-header [translucent]="true" mode="ios" class="ion-no-border class-order-0" id="idHeader">
+<ion-header mode="md" [translucent]="true" class="ion-no-border back-button">
   <ion-toolbar>
-    <ion-buttons slot="end">
-      <ion-button routerLink="/..">
-        <ion-icon slot="icon-only" name="close" class="text-color-white"></ion-icon>
-      </ion-button>
+    <ion-buttons slot="end" mode="md">
+      <ion-back-button color="dark" icon="close-outline" ></ion-back-button>
     </ion-buttons>
-    <ion-title>
-      Harry up! Buy two Get One Free
-    </ion-title>
   </ion-toolbar>
 </ion-header>
-<!-- [scrollEvents]="true"
-(ionScrollStart)="logScrollStart()"
-(ionScrollEnd)="logScrollEnd()" -->
-<ion-content [fullscreen]="true" mode="ios" forceOverscroll="true" [scrollEvents]="true"
-  (ionScroll)="logScrolling($event)">
-  <ion-header collapse="condense" class="ion-no-border">
-    <ion-fab vertical="top" horizontal="end" slot="fixed" mode="ios">
-      <ion-fab-button color="transparent" routerLink="/..">
-        <ion-icon name="close" class="text-color-white"></ion-icon>
-      </ion-fab-button>
-    </ion-fab>
+
+<ion-content [fullscreen]="true" mode="ios">
+  <ion-header collapse="" class="ion-no-border">
     <ion-toolbar class="text-medium ">
       <ion-title size="large" class="font-size-20" color="white"> Harry up! Buy two Get One Free
         <span class="expires">
