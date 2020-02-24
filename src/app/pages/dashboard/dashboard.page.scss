@@ -5,18 +5,6 @@ ion-content ion-toolbar {
     ion-toolbar {
       --ion-background-color: transparent;
     }
-    ion-fab {
-      ion-fab-button {
-        ion-badge {
-          position: absolute;
-          bottom: 4px;
-        }
-        ion-icon {
-          top: 8px;
-          position: absolute;
-        }
-      }
-    }
   }
   ion-card {
     margin-inline-start: 2px;

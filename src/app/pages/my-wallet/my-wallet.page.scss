@@ -21,3 +21,11 @@ ion-header {
 .transfer-btn{
     width: 64%;
 }
+//light
+@media (prefers-color-scheme: light) {
+
+  ion-segment-button {
+    color: var(--ion-color-white-shade);
+  }
+
+}

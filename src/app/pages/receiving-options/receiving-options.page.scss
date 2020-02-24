@@ -14,8 +14,8 @@ ion-item ion-segment {
 .padding-top-7 {
   padding-top: 7px;
 }
-.padding-end-8{
-  padding-inline-end  : 8px;
+.padding-end-8 {
+  padding-inline-end: 8px;
 }
 ion-header {
   background: var(--ion-color-primary) url(../../../assets/bg-.png);
@@ -33,4 +33,10 @@ ion-item {
 .verify-btn {
   width: 64%;
   margin-top: 24px;
+}
+//light
+@media (prefers-color-scheme: light) {
+  ion-segment-button {
+    color: var(--ion-color-white-shade);
+  }
 }

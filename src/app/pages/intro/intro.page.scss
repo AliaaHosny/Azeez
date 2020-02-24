@@ -1,24 +1,37 @@
-.get-started-btn{
-    width: 64%;
-    margin-top: 20px;
+.text-white {
+  color: var(--ion-color-white);
 }
-.logo{
-    height: 50px;
-    margin: 0 auto;
+.get-started-btn {
+  width: 64%;
+  margin-top: 20px;
 }
-.padding-top-20{
-    padding-top: 20px;
+.logo {
+  height: 50px;
+  margin: 0 auto;
 }
-ion-content {
-    --padding-top: 24px;
-    --background:  url(../../../assets/bg.png) no-repeat center center / cover;
-}
-ion-content.dark {
-    --padding-top: 24px;
-    --background: var(--ion-color-primary) url(../../../assets/bg.png) no-repeat center center / cover;
+.padding-top-20 {
+  padding-top: 20px;
 }
 
+ion-content {
+    --padding-top: 24px;
+    --background: url(../../../assets/bg.png) no-repeat center center / cover;
+  }
+
 ion-slides {
-    margin-top: 24px;
-    padding-bottom: 24px;
+  margin-top: 24px;
+  padding-bottom: 24px;
+  --bullet-background-active: var(--ion-color-secondary);
 }
+
+//light
+@media (prefers-color-scheme: light) {
+    ion-button {
+        --ion-color-contrast: var(--ion-color-primary);
+      }
+      ion-content {
+        --padding-top: 24px;
+        --background: var(--ion-color-primary) url(../../../assets/bg.png) no-repeat center center / cover;
+      }
+}
+

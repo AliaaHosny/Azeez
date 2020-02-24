@@ -20,5 +20,21 @@ ion-header{
   background-position: center top;
   background-size: 100vh;
   background-blend-mode: screen;
+}
+.facebook-fab{
+  --background	: #4267B2;
+}
+.twitter-fab{
+  --background	: #2CAAE1;
+}
+.google-fab{
+  --background	: #EA4335;
+}
+//light
+@media (prefers-color-scheme: light) {
+
+  ion-segment-button {
+    color: var(--ion-color-white-shade);
+  }
 
 }

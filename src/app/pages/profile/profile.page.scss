@@ -35,4 +35,17 @@ ion-content ion-toolbar {
   
     }
   }
+
+  //light
+@media (prefers-color-scheme: light) {
+
+  ion-title  {
+    color: var(--ion-color-white);
+  }
+  ion-fab{
+        color: var(--ion-color-white);
+
+  }
+
+}
   
