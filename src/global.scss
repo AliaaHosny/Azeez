@@ -25,21 +25,7 @@
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
 
-ion-header {
-  --background: transparent;
-  // ion-toolbar {
-  //   --background: transparent;
-  // }
-}
-
-ion-content {
-  --background:  var(--ion-background-color) url(assets/bg-.png) no-repeat center center / cover;
-
-  ion-toolbar {
-    --background: translucent;
-  }
-}
-
+// white color 
 .ion-color-white {
   --ion-color-base: var(--ion-color-white);
   --ion-color-base-rgb: var(--ion-color-white-rgb);
@@ -48,7 +34,27 @@ ion-content {
   --ion-color-shade: var(--ion-color-white-shade);
   --ion-color-tint: var(--ion-color-white-tint);
 }
+@font-face {
+  font-family: 'YorktenSlabNormRegular';
+  src: url('assets/fonts/YorktenSlabNormRegular.otf');//mine
+}
+* {
+  font-family: 'YorktenSlabNormRegular' !important;
+}
 
+//bg
+ion-header {
+  --background: transparent;
+}
+ion-content {
+  --background:  var(--ion-background-color) url(assets/bg-.png) no-repeat center center / cover;
+  ion-toolbar {
+    --background: translucent;
+  }
+}
+
+
+//modal class
 ion-modal.auto-height {
   &.bottom {
     align-items: flex-end;

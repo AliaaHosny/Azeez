@@ -1,21 +1,18 @@
-<ion-header class="ion-no-border" mode="ios">
+<ion-header  mode="md" [translucent]="true" class="ion-no-border back-button">
   <ion-toolbar>
-    <ion-buttons slot="end">
-      <ion-button>
-        <ion-icon slot="icon-only" name="close" class="text-color-white"></ion-icon>
-      </ion-button>
+    <ion-buttons slot="end" mode="md">
+      <ion-back-button color="white" icon="close-sharp"></ion-back-button>
     </ion-buttons>
-    <ion-title>Fresh Ads</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense" mode="ios">
+  <ion-header collapse="" mode="ios" class="ion-no-border">
     <ion-toolbar>
       <ion-title size="large">Fresh Ads</ion-title>
     </ion-toolbar>
   </ion-header>
-  <ion-slides [options]="slideOpts">
+  <ion-slides  [options]="slideOpts" id="fresh-ads" *ngIf="didInit">
     <ion-slide>
       <ion-card>
         <img src="assets/ad.png" alt="">

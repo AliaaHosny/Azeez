@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, AfterViewInit } from '@angular/core';
 import { AlertController, ModalController } from '@ionic/angular';
 import { SkipModalPage } from '../skip-modal/skip-modal.page';
 
@@ -7,14 +7,9 @@ import { SkipModalPage } from '../skip-modal/skip-modal.page';
   templateUrl: './fresh-ads.page.html',
   styleUrls: ['./fresh-ads.page.scss'],
 })
-export class FreshAdsPage implements OnInit {
+export class FreshAdsPage implements AfterViewInit  {
 
-  constructor(public modalController: ModalController) {}
-
-  ngOnInit() {
-  }
-
-  slideOpts = {
+  public slideOpts = {
     slidesPerView: 1.09,
     coverflowEffect: {
       rotate: 30,
@@ -102,6 +97,21 @@ export class FreshAdsPage implements OnInit {
       }
     }
   }
+
+  public didInit: boolean = false;
+
+  ngAfterViewInit() {
+      this.didInit = true;
+  }
+  constructor(public modalController: ModalController) { }
+
+  // ngOnInit() {
+  //   const slides :any = document.querySelector("#fresh-ads")
+  //   slides.getSwiper().then(value =>console.log("Swiper value",value))
+  // }
+
+
+
   async presentModal() {
     const modal = await this.modalController.create({
       component: SkipModalPage,
