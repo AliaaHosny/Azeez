@@ -4,7 +4,7 @@
 //   ion-toolbar {
 //     --background: translucent;
 //   }
-// } 
+// }
 ion-header {
   ion-toolbar {
     --ion-background-color: transparent;
@@ -66,5 +66,102 @@ ion-card-content {
     ion-label {
       font-size: 10px;
     }
+  }
+}
+ion-content {
+  div.fab {
+    position: absolute;
+    pointer-events: none;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    margin-inline-start: 0px;
+    bottom: 56px;
+    ion-fab-button {
+      pointer-events: auto;
+      margin: auto;
+      bottom: 10px;
+      position: absolute;
+      right: 0;
+      left: 0;
+    }
+  }
+  .fabs {
+    position: absolute;
+    pointer-events: none;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    margin-inline-start: 0px;
+    bottom: 56px;
+  }
+  .big-filter {
+    margin: auto;
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 25%;
+    width: 70%;
+    height: 70vw;
+    ion-fab {
+      ion-fab-button {
+        --border-radius: 0%;
+
+        ion-badge {
+          position: absolute;
+          bottom: 0px;
+        }
+        ion-icon {
+          top: 8px;
+          position: absolute;
+        }
+      }
+    }
+    .icons {
+      pointer-events: auto;
+      transform: translate(50%, -50%);
+      color: var(--ion-color-white);
+      visibility: hidden;
+      opacity: 0;
+      ion-fab-button {
+        --box-shadow: none;
+      }
+    }
+    .icons:nth-of-type(1) {
+      top: 18%;
+      right: 50%;
+    }
+    .icons:nth-of-type(2) {
+      top: 33%;
+      right: 24%;
+    }
+    .icons:nth-of-type(3) {
+      top: 66%;
+      right: 24%;
+    }
+    .icons:nth-of-type(4) {
+      top: 80%;
+      right: 50%;
+    }
+    .icons:nth-of-type(5) {
+      top: 66%;
+      right: 76%;
+    }
+    .icons:nth-of-type(6) {
+      top: 33%;
+      right: 76%;
+    }
+  }
+  .close-btn {
+    background: #1187d0;
+    border: #1187d0;
+    border-width: 31px;
+    border-style: solid;
+    border-width: 24px;
+    border-radius: 50%;
   }
 }

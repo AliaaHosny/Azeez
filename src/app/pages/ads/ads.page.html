@@ -1,6 +1,6 @@
 <ion-header [translucent]="true" class="ion-no-border">
   <ion-toolbar> </ion-toolbar>
-  <ion-fab vertical="top" horizontal="end" slot="fixed" class="red" >
+  <ion-fab vertical="top" horizontal="end" slot="fixed" class="red">
     <ion-fab-button color="danger" routerLink="/fresh-ads">
       <ion-badge color="danger">22</ion-badge>
       <ion-icon name="notifications"></ion-icon>
@@ -22,7 +22,7 @@
             <ion-chip disabled>
               <!-- <ion-icon name="pin"></ion-icon> -->
               <ion-icon name="sticker" color="white"></ion-icon>
-              <ion-label  color="white">New</ion-label>
+              <ion-label color="white">New</ion-label>
             </ion-chip>
             <img src="assets/Bitmap.png" alt="">
           </div>
@@ -134,11 +134,51 @@
       </ion-col>
     </ion-row>
   </ion-grid>
-  <ion-fab vertical="bottom" horizontal="center" slot="fixed">
-    <ion-fab-button>
-      <!-- <ion-icon name="notifications"></ion-icon> -->
-      <ion-icon name="filter"></ion-icon>
-      <!-- <span>12312</span> -->
+  <div vertical="bottom" horizontal="center" slot="fixed" mode="ios" class="fab" >
+    <ion-fab-button  [@filterMenu]="isOpen ? 'middle' : 'bottom'" mode="ios">
+      <ion-icon [name]="isOpen ? 'close' : 'filter'" [class]="isOpen ? 'close-btn' : ''" (click)="toggle()"></ion-icon>
     </ion-fab-button>
-  </ion-fab>
+  </div>
+  <div class="fabs" vertical="bottom" horizontal="center" slot="fixed" >
+    <div class="big-filter">
+      <ion-fab class="icons" mode="ios" [@filterMenu]="isOpen ? 'show' : 'hide'">
+        <ion-fab-button color="tranparent"   mode="ios" >
+          <ion-badge color="tranparent">New</ion-badge>
+          <ion-icon name="sticker"></ion-icon>
+        </ion-fab-button>
+      </ion-fab>
+      <ion-fab class="icons" mode="ios" [@filterMenu]="isOpen ? 'show' : 'hide'">
+        <ion-fab-button color="tranparent"   mode="ios" >
+          <ion-badge color="tranparent">Viewed</ion-badge>
+          <ion-icon name="app"></ion-icon>
+        </ion-fab-button>
+      </ion-fab>
+      <ion-fab class="icons" mode="ios" [@filterMenu]="isOpen ? 'show' : 'hide'">
+        <ion-fab-button color="tranparent"   mode="ios" >
+          <ion-badge color="tranparent">Skipped</ion-badge>
+          <ion-icon name="gym"></ion-icon>
+        </ion-fab-button>
+      </ion-fab>
+      <ion-fab class="icons" mode="ios" [@filterMenu]="isOpen ? 'show' : 'hide'">
+        <ion-fab-button color="tranparent"   mode="ios" >
+          <ion-badge color="tranparent">Expired</ion-badge>
+          <ion-icon name="sand-clock"></ion-icon>
+        </ion-fab-button>
+      </ion-fab>
+      <ion-fab class="icons" mode="ios" [@filterMenu]="isOpen ? 'show' : 'hide'">
+        <ion-fab-button color="tranparent"   mode="ios" >
+          <ion-badge color="tranparent">Saved</ion-badge>
+          <ion-icon name="heart-outline"></ion-icon>
+        </ion-fab-button>
+      </ion-fab>
+      <ion-fab class="icons" mode="ios" [@filterMenu]="isOpen ? 'show' : 'hide'">
+        <ion-fab-button color="tranparent"   mode="ios" >
+          <ion-badge color="tranparent">All Ads</ion-badge>
+          <ion-icon name="indent-all"></ion-icon>
+        </ion-fab-button>
+      </ion-fab>
+    </div>
+  </div>
+
+
 </ion-content>
