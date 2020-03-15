@@ -1,0 +1,51 @@
+<ion-header>
+  <ion-toolbar color="transparent"  >
+    <ion-title  mode="ios" color="white">Edit Profile</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <form class="ion-padding-horizontal ion-text-center">
+    <ion-item for="image">
+      <ion-label position="stacked" for="image" >Profile Image</ion-label>
+      <input type="file" name="image" id="image" hidden >
+      <label for="image" class="lable-for-image"></label>
+      <img for="image" class=" ion-margin-vertical" src="assets/user-1.png" alt="">
+    </ion-item>
+    <ion-item disabled>
+      <ion-label position="floating">Username</ion-label>
+      <ion-input value="AzeezUserName_1" ></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Email</ion-label>
+      <ion-input value="email@domain.com"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Mobile</ion-label>
+      <ion-input value="+966506300325"></ion-input>
+    </ion-item>
+    <ion-item lines="full">
+      <ion-label>Gender</ion-label>
+      <ion-segment slot="end" mode="ios" value="male">
+        <ion-segment-button value="male">
+          <ion-label>Male</ion-label>
+        </ion-segment-button>
+        <ion-segment-button value="female">
+          <ion-label>Female</ion-label>
+        </ion-segment-button>
+      </ion-segment>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Country</ion-label>
+      <ion-select placeholder="Select Country"  value="KSA">
+        <ion-select-option value="UAE">UAE</ion-select-option>
+        <ion-select-option value="KSA">KSA</ion-select-option>
+      </ion-select>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Location</ion-label>
+      <ion-input value="Location"></ion-input>
+    </ion-item>
+    <ion-button class="ion-margin-top login-btn" shape="round" mode="ios">Edit</ion-button>
+  </form>
+</ion-content>
