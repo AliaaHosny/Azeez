@@ -1,19 +1,17 @@
-import { Component, OnInit } from '@angular/core';
+import { Injectable } from '@angular/core';
 import { ModalController } from '@ionic/angular';
-import { NotificationsModalPage } from '../notifications-modal/notifications-modal.page';
+import { NotificationsModalPage } from './notifications-modal.page';
 
+type ModalPosition = "top" | "bottom";
 
-@Component({
-  selector: 'app-edit-profile',
-  templateUrl: './edit-profile.page.html',
-  styleUrls: ['./edit-profile.page.scss'],
+@Injectable({
+  providedIn: 'root'
 })
-export class EditProfilePage implements OnInit {
+export class NotificationsModalService {
 
   constructor(public modalController: ModalController) { }
 
-  ngOnInit() {
-  }
+
   async showNotification() {
     const modal = await this.modalController.create({
       component: NotificationsModalPage,
@@ -26,7 +24,6 @@ export class EditProfilePage implements OnInit {
       showBackdrop: false,
     });
     await modal.present();
-    setTimeout(() => modal.dismiss(), 1000);
+    setTimeout(() => modal.dismiss(), 2500);
   }
-
 }

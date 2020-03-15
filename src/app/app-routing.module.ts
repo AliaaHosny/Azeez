@@ -76,6 +76,10 @@ const routes: Routes = [
   },  {
     path: 'edit-profile',
     loadChildren: () => import('./pages/edit-profile/edit-profile.module').then( m => m.EditProfilePageModule)
+  },
+  {
+    path: 'notifications-modal',
+    loadChildren: () => import('./pages/notifications-modal/notifications-modal.module').then( m => m.NotificationsModalPageModule)
   }
 
 ];

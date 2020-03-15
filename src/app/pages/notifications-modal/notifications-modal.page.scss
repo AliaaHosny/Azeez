@@ -1,0 +1,6 @@
+ion-card {
+  --background: #020202cc;
+  --color: var(--ion-color-white);
+  backdrop-filter: blur(2px);
+  pointer-events: auto;
+}

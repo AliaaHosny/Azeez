@@ -25,7 +25,7 @@
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
 
-// white color 
+// white color
 .ion-color-white {
   --ion-color-base: var(--ion-color-white);
   --ion-color-base-rgb: var(--ion-color-white-rgb);
@@ -35,11 +35,11 @@
   --ion-color-tint: var(--ion-color-white-tint);
 }
 @font-face {
-  font-family: 'YorktenSlabNormRegular';
-  src: url('assets/fonts/YorktenSlabNormRegular.otf');//mine
+  font-family: "YorktenSlabNormRegular";
+  src: url("assets/fonts/YorktenSlabNormRegular.otf"); //mine
 }
 * {
-  font-family: 'YorktenSlabNormRegular' !important;
+  font-family: "YorktenSlabNormRegular" !important;
 }
 
 //bg
@@ -47,17 +47,25 @@ ion-header {
   --background: transparent;
 }
 ion-content {
-  --background:  var(--ion-background-color) url(assets/bg-.png) no-repeat center center / cover;
+  --background: var(--ion-background-color) url(assets/bg-.png) no-repeat center center / cover;
   ion-toolbar {
     --background: translucent;
   }
 }
 
-
 //modal class
 ion-modal.auto-height {
+  --background: transparent;
+  &.notifications {
+    pointer-events: none;
+  }
   &.bottom {
     align-items: flex-end;
+    margin-bottom: 1vh;
+  }
+  &.top {
+    align-items: flex-start;
+    margin-top: 1vh;
   }
 
   --height: auto;
@@ -107,5 +115,4 @@ body:not(.dark) {
       color: var(--ion-color-white);
     }
   }
-
 }
