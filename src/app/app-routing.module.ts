@@ -80,6 +80,14 @@ const routes: Routes = [
   {
     path: 'notifications-modal',
     loadChildren: () => import('./pages/notifications-modal/notifications-modal.module').then( m => m.NotificationsModalPageModule)
+  },
+  {
+    path: 'contact-us',
+    loadChildren: () => import('./pages/contact-us/contact-us.module').then( m => m.ContactUsPageModule)
+  },
+  {
+    path: 'forget-password',
+    loadChildren: () => import('./pages/forget-password/forget-password.module').then( m => m.ForgetPasswordPageModule)
   }
 
 ];

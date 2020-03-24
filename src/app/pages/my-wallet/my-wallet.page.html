@@ -309,7 +309,12 @@
       <p>AED 2.00</p>
     </ion-label>
   </ion-item>
-  <ion-button class="ion-margin-bottom transfer-btn" shape="round" mode="ios" (click)="presentModal()">Transfer
+  <ion-button class="ion-margin-bottom transfer-btn ion-no-padding" shape="round" mode="ios" (click)="presentModal()" disabled >
+    <ion-label>
+      Transfer Now
+      <br>
+      <h6 >Default Item</h6>
+    </ion-label>
   </ion-button>
 
 </ion-content>
